@@ -1,0 +1,35 @@
+format = "$username $directory $nodejs $git_branch $git_status \n $character"
+
+[character]
+success_symbol = "[ﰲ](bold #21222c)"
+error_symbol = "[ﰲ](bold #ff5555)"
+
+[username]
+format = "[$user]($style)"
+style_user = "bold #f1fa8c"
+show_always = true
+
+[directory]
+format = "at [$path]($style)"
+style = "bold #ff5555"
+truncate_to_repo = true
+
+[nodejs]
+symbol = " "
+format = "via [$version]($style)"
+style = "bold #50fa7b"
+
+[rust]
+symbol = " "
+format = "via [$version]($style)"
+style = "bold red"
+
+[git_branch]
+symbol = ""
+format = "on [$branch $symbol]($style)"
+style = "bold #ff79c6"
+
+[git_status]
+format = "[$all_status]($style)"
+style = "bold #ff79c6"
+disabled = true
